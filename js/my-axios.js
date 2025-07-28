@@ -1,6 +1,6 @@
 function myAxios(config) {
   return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpSRequest()
+    const xhr = new XMLHttpRequest()
     if (config.params) {
       const paramsObj = new URLSearchParams(config.params)
       const queryString = paramsObj.toString()

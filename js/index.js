@@ -6,7 +6,7 @@
 //封装渲染函数
 function getWeather(cityCode){
     myAxios({
-        url:'http://hmajax.itheima.net/api/weather',
+        url:'https://hmajax.itheima.net/api/weather',
         params:{
             city:cityCode
         }
@@ -98,7 +98,7 @@ getWeather('110100');
 document.querySelector('.search-city').addEventListener('input',e=>{
     console.log(e.target.value);
     myAxios({
-        url:'http://hmajax.itheima.net/api/weather/city',
+        url:'https://hmajax.itheima.net/api/weather/city',
         params:{
             city:e.target.value
         }
